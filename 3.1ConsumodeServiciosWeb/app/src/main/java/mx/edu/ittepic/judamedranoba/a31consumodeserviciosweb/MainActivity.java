@@ -6,10 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -72,12 +70,7 @@ public class MainActivity extends AppCompatActivity {
                         JSONObject wind = jsonObj.getJSONObject("wind");
                         JSONObject clouds = jsonObj.getJSONObject("clouds");
                         JSONObject sys = jsonObj.getJSONObject("sys");
-                        /*"weather":[{"id":802,"main":"Clouds","description":"scattered clouds","icon":"03d"}],
-                        "base":"stations","main":{"temp":282.15,"pressure":1016,"humidity":87,"temp_min":282.15,"temp_max":282.15},
-                        "visibility":16093,"wind":{"speed":1.47,"deg":116.002},"clouds":{"all":40},"dt":1493902320,
-                        "sys":{"type":1,"id":4020,"message":1.7872,"country":"MX","sunrise":1493900769,"sunset":1493947602},
-                        "id":3981941,"name":"Tepic","cod":200}*/
-                        cadena += "CLIMA"+"\n" +"ID: "+uno.getString("id")+" MAIN: "+uno.getString("main")+" DESCRIPTION: "+
+                        cadena += "ID: "+uno.getString("id")+" MAIN: "+uno.getString("main")+" DESCRIPTION: "+
                                 uno.getString("description")+" ICON: "+uno.getString("icon")+
                                 "\n"+" BASE: "+jsonObj.getString("base")+
                                 "\n"+"MAIN"+
