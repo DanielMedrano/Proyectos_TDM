@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.edu.ittepic.judamedranoba.a47objectanimator.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/animationCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonContainer">
+
+        <ImageView
+            android:id="@+id/sol"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:src="@drawable/sol"
+            android:tint="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClick"
+            android:text="@string/animate" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButton2Click"
+            android:text="Animate2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButton3Click"
+            android:text="animate3" />
+    </LinearLayout>
+
+</RelativeLayout>
