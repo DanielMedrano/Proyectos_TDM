@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mx.edu.ittepic.judamedranoba.a54contadordepasos.SimplePedometerActivit">
+    tools:context="mx.edu.ittepic.judamedranoba.a54contadordepasos.SimplePedometerActivity">
 
     <TextView
         android:id="@+id/textView"
